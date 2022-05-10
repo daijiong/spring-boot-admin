@@ -1,0 +1,43 @@
+spring:
+  boot:
+    admin:
+      ui:
+        brand: <img src="assets/img/icon-spring-boot-admin.svg"><span>Spring Boot Admin</span>
+        title: Spring Boot Admin
+      # notify:
+      #   mail:
+      #     enabled: false
+      #     from: 393082939@qq.com
+      #     to: djflying1988@163.com
+  # mail:
+  #   test-connection: off
+  #   host: smtp.qq.com
+  #   password: vdcdymjxnpuobghi
+  #   properties:
+  #     mail:
+  #       smtp:
+  #         auth: true
+  #         starttls:
+  #           enable: true
+  #           required: true
+  #   username: 393082939@qq.com
+  security:
+    user:
+      name: admin
+      password: admin
+
+#sba:
+#  alarm:
+#    # 需要报警的环境
+#    env: dev,test,qa,demo,prod
+#
+#aliyun:
+#  mq:
+#    msgcenter:
+#      accessKey: LTAI4Fxx9g33Ee4mLpKrf2vK
+#      secretKey: TMCeWQ245184apY3saGaIfLSGjdwkK
+#      nameSrvAddr: http://MQ_INST_1192972714412550_BXdpR1vu.mq-internet-access.mq-internet.aliyuncs.com:80
+#      robot:
+#        groupId: GID_MSG_CENTER_BATCH_DEV
+#        topic: msg_center_dingrobot_dev
+#        tag: service_abnormal_warning

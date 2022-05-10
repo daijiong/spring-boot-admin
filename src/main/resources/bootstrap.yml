@@ -1,0 +1,28 @@
+server:
+  port: 9002
+  servlet:
+    context-path: /spring-boot-admin
+  forward-headers-strategy: NATIVE
+spring:
+  profiles:
+    active: @profile.name@
+  application:
+    name: spring-boot-admin
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: @config.server-addr@
+        namespace: @config.namespace@
+        group: ${spring.application.name}
+        shared-configs:
+          - data-id: management.yaml
+            group: COMMON
+            refresh: true
+      discovery:
+        server-addr: @config.server-addr@
+        namespace: @config.namespace@
+        metadata:
+          management.context-path: ${server.servlet.context-path}/actuator
+
+
