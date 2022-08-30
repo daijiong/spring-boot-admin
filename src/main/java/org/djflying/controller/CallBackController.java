@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Slf4j
 @RestController
-@RequestMapping(value = "callBack")
+@RequestMapping(value = "/actuator")
 public class CallBackController {
 
     @GetMapping(value = "/test")
