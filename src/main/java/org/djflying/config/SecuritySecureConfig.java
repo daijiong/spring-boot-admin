@@ -31,7 +31,7 @@ public class SecuritySecureConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
             //1.配置所有静态资源和登录页可以公开访问
             .antMatchers(adminContextPath + "/actuator/**").permitAll().antMatchers(adminContextPath + "/assets/**").permitAll().antMatchers(adminContextPath + "/login")
-            .permitAll().anyRequest().authenticated().and()
+            .permitAll().antMatchers(adminContextPath + "/callBack/**").permitAll().anyRequest().authenticated().and()
             //2.配置登录和登出路径
             .formLogin().loginPage(adminContextPath + "/login").successHandler(successHandler).and().logout().logoutUrl(adminContextPath + "/logout").and()
             //3.开启http basic支持，admin-client注册时需要使用
