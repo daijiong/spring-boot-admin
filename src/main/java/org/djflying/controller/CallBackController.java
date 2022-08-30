@@ -2,6 +2,7 @@ package org.djflying.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -11,7 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
  * @version v1.0 2022/8/30 15:54
  */
 @Slf4j
-@RestController(value = "/callBack")
+@RestController
+@RequestMapping(value = "callBack")
 public class CallBackController {
 
     @GetMapping(value = "/test")
