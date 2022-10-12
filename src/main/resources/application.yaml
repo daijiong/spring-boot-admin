@@ -25,19 +25,3 @@ spring:
     user:
       name: admin
       password: admin
-
-#sba:
-#  alarm:
-#    # 需要报警的环境
-#    env: dev,test,qa,demo,prod
-#
-#aliyun:
-#  mq:
-#    msgcenter:
-#      accessKey: LTAI4Fxx9g33Ee4mLpKrf2vK
-#      secretKey: TMCeWQ245184apY3saGaIfLSGjdwkK
-#      nameSrvAddr: http://MQ_INST_1192972714412550_BXdpR1vu.mq-internet-access.mq-internet.aliyuncs.com:80
-#      robot:
-#        groupId: GID_MSG_CENTER_BATCH_DEV
-#        topic: msg_center_dingrobot_dev
-#        tag: service_abnormal_warning
