@@ -124,7 +124,7 @@
         <repository>
             <id>renjia</id>
             <name>renjia Repository</name>
-            <url>http://nexus.ukerw.com/repository/maven-public/</url>
+            <url>https://nexus.ukerw.com/repository/maven-public/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -138,7 +138,7 @@
         <pluginRepository>
             <id>renjia</id>
             <name>renjia Repository plugin</name>
-            <url>http://nexus.ukerw.com/repository/maven-public/</url>
+            <url>https://nexus.ukerw.com/repository/maven-public/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -153,12 +153,12 @@
         <snapshotRepository>
             <id>renjia-snapshots</id>
             <name>renjia-snapshots</name>
-            <url>http://nexus.ukerw.com/repository/maven-snapshots/</url>
+            <url>https://nexus.ukerw.com/repository/maven-snapshots/</url>
         </snapshotRepository>
         <repository>
             <id>renjia-releases</id>
             <name>renjia-releases</name>
-            <url>http://nexus.ukerw.com/repository/maven-releases/</url>
+            <url>https://nexus.ukerw.com/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
 
@@ -175,11 +175,11 @@
                 <!--当前环境-->
                 <profile.name>dev</profile.name>
                 <!--Nacos配置中心地址-->
-                <config.server-addr>http://47.100.227.235:8848</config.server-addr>
+                <config.server-addr>http://139.196.181.117:8848</config.server-addr>
                 <!--Nacos配置中心命名空间,用于支持多环境.这里必须使用ID，不能使用名称,默认为空-->
                 <config.namespace>3f8cc313-c19e-4e89-941a-568cb1be29a1</config.namespace>
                 <!--Nacos服务发现地址-->
-                <discovery.server-addr>http://47.100.227.235:8848</discovery.server-addr>
+                <discovery.server-addr>http://139.196.181.117:8848</discovery.server-addr>
             </properties>
         </profile>
         <!-- 戴炯测试环境 -->
@@ -189,11 +189,11 @@
                 <!--当前环境-->
                 <profile.name>dj</profile.name>
                 <!--Nacos配置中心地址-->
-                <config.server-addr>http://47.100.227.235:8848</config.server-addr>
+                <config.server-addr>http://139.196.181.117:8848</config.server-addr>
                 <!--Nacos配置中心命名空间,用于支持多环境.这里必须使用ID，不能使用名称,默认为空-->
                 <config.namespace>8f52b2b6-a26b-4c07-88ef-9e30c3bb9498</config.namespace>
                 <!--Nacos服务发现地址-->
-                <discovery.server-addr>http://47.100.227.235:8848</discovery.server-addr>
+                <discovery.server-addr>http://139.196.181.117:8848</discovery.server-addr>
             </properties>
         </profile>
     </profiles>
